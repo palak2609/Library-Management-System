@@ -1,0 +1,6 @@
+DROP DATABASE Library;
+CREATE DATABASE Library;
+USE library;
+CREATE TABLE Books (bcode int PRIMARY KEY, bname varchar(50), category varchar(50), language varchar(20), bprice float, Qty int);
+CREATE TABLE issue (name varchar(50), regno varchar(50), bcode char(5), issuedate date, email varchar(50));
+CREATE TABLE submit (name varchar(50), regno varchar(50), bcode char(5), submitdate date, email varchar(50));
